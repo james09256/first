@@ -6,48 +6,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Donut Shop</title>
     <style>
-        body {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-            background-color: #f8e8a6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .random-position {
-            position: absolute;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #d63384;
-        }
-        img {
-            position: absolute;
-            max-width: 150px;
-        }
+
     </style>
 </head>
 <body>
-    <script>
-        function getRandomPosition(element) {
-            const x = Math.random() * (window.innerWidth - element.offsetWidth);
-            const y = Math.random() * (window.innerHeight - element.offsetHeight);
-            element.style.left = `${x}px`;
-            element.style.top = `${y}px`;
-        }
-        
-        const heading = document.createElement('h1');
-        heading.textContent = 'Donut World';
-        heading.classList.add('random-position');
-        document.body.appendChild(heading);
-        getRandomPosition(heading);
-        
-        const image = document.createElement('img');
-        image.src = '/uploads/2023/02/donut.png';
-        document.body.appendChild(image);
-        getRandomPosition(image);
-    </script>
+    <h1>Donut World</h1>
+    <img src= '/uploads/2023/02/donut.png'>
 </body>
 </html>
